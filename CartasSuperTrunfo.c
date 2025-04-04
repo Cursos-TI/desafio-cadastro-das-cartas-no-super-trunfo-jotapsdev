@@ -5,7 +5,7 @@ int main() {
     char codigo_carta[3] = "BH";     
     char nome_cidade[15] = "Belo Horizonte"; 
 
-    int populacao = 2316000;  
+    float populacao = 2316000;  
     float area_km2 = 331354;   
     double PIB = 105829675053;
     int numero_pontos_turisticos = 22;
@@ -14,12 +14,18 @@ int main() {
     printf("Estado: %s\n", estado);
     printf("Código Carta: %s\n", codigo_carta);
     printf("Nome da Cidade: %s\n", nome_cidade);
-    printf("População: %d mil\n", populacao);
+    printf("População: %f mil\n", populacao);
     printf("Área (km²): %.3f\n", area_km2);
     printf("PIB: %.2f mil\n", PIB);
     printf("Número de pontos turísticos: %d\n", numero_pontos_turisticos);
 
+    float densidade = populacao / area_km2;
+    printf("A densidade é: %.3f hab/km²\n", densidade);
 
+    float pibpercapta_mg = PIB / populacao;
+    printf("PIB per capita: %.2f\n\n", pibpercapta_mg);
+
+    // Dados de São Paulo
     char Estado [] = "Sao Paulo";
     char codigo_da_carta[3]= "SP";
     char nome_da_cidade[20] = "Sao Paulo";
@@ -36,6 +42,21 @@ int main() {
     printf(" Area (km2): %3f\n", area_km2);
     printf("PIB: %2f mil\n", PIB);
     printf(" Numero de pontos turisticos: %d\n", numero_de_pontos_turisticos);
+
+    float desnsidade_sp;
+
+    desnsidade_sp = (float) Populacao / area_em_km2;
+    printf("A densidade é: %.3f hab/km²\n", desnsidade_sp);
+
+    float pibpercapta_sp;
+    pibpercapta_sp = (float) pib / Populacao;
+    printf("PIB per capita: %.3f\n", pibpercapta_sp);
+
+
+
+
+
+
 
 
 
