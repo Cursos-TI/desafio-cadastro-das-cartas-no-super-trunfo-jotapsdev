@@ -23,7 +23,10 @@ int main() {
     printf("A densidade é: %.3f hab/km²\n", densidade);
 
     float pibpercapta_mg = PIB / populacao;
-    printf("PIB per capita: %.2f\n\n", pibpercapta_mg);
+    printf("PIB per capita: %.2f\n", pibpercapta_mg);
+
+    float superpoderMG = PIB + pibpercapta_mg + densidade;
+    printf("Super poder MG: %f\n\n", superpoderMG);
 
     // Dados de São Paulo
     char Estado [] = "Sao Paulo";
@@ -52,7 +55,15 @@ int main() {
     pibpercapta_sp = (float) pib / Populacao;
     printf("PIB per capita: %.3f\n", pibpercapta_sp);
 
+    float superpoderSP = pib + pibpercapta_sp + desnsidade_sp;
+    printf(" Super poder SP: %f mil\n\n", superpoderSP);
 
+
+    int Disputa = (superpoderMG > superpoderSP);
+    printf("MG é mais forte?: %d\n", Disputa);
+
+    int disputa = (superpoderMG < superpoderSP);
+    printf("SP é mais forte?: %d\n", disputa);
 
 
 
